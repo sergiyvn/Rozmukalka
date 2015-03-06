@@ -15,7 +15,7 @@
 // RANGE_TIME - промежуток времени до нуля в котором надо разомкнуть цепь
 //
 // !!! //Serial.print() после тестов всюду закоментировать!!! Грузит сильно ардуино
-
+// Alex start
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <Bounce.h>
