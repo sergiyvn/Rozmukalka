@@ -78,8 +78,8 @@ char* MODE_NAME[] = {
   "  - HETY        ",
   "  - HETY        "
 };
-boolean is_mode_selected = false;//Проверяет или выбран режим игры
 
+boolean is_mode_selected = false;//Проверяет или выбран режим игры
 boolean is_mode_setup = false; // Проверяет установлены ли параметры выбраного режим игры
 
 long TIME = 5000; //5sec Timer time
@@ -182,12 +182,14 @@ void loop() {
     checkDownButton();
     checkOkButton();
   }
+  //Устанавливаем время таймера
   else if (!is_time_setup)
   {
     checkUpButton();
     checkDownButton();
     checkOkButton();
   }
+  //Ждем запуска игры
   else if (!gameStarted)
   {
     checkStartButton();
